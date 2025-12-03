@@ -1,0 +1,19 @@
+.bg-image {
+    background-image: url('./images/suellen-e-andre.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Adjust the opacity as needed */
+    z-index: 0;
+}
+
+.bg-image .content {
+    position: relative;
+    z-index: 1;
+}
