@@ -1,4 +1,4 @@
-import { Lato, Imperial_Script } from "next/font/google";
+import { Lato, Imperial_Script, Rubik } from "next/font/google";
 
 const lato = Lato({
     weight: '400',
@@ -10,4 +10,9 @@ const imperialScript = Imperial_Script({
     subsets: ["latin"],
 });
 
-export { lato, imperialScript }
+const rubik = Rubik({
+    weight: '400',
+    subsets: ["latin"],
+});
+
+export { lato, imperialScript, rubik }

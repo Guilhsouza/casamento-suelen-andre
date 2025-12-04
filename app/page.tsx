@@ -1,5 +1,5 @@
 'use client'
-import { imperialScript, lato } from './fonts/index'
+import { imperialScript, lato, rubik } from './fonts/index'
 import Header from './components/Header'
 import './backgroundImage.css'
 
@@ -9,7 +9,9 @@ export default function Home() {
       <main className="">
         <section className='bg-image h-screen bg-bottom md:bg-position-[center_60%]'>
           <Header />
-          <h2 className={`content text-white text-center mx-6 text-6xl sm:text-7xl ${imperialScript.className}`}>Suellen & André</h2>
+          <h3 className={`content text-white text-center mx-6 sm:hidden ${rubik.className}`}>01 | 10 | 2026</h3>
+          <h2 className={`content text-white text-center mx-6 mt-2 sm:mt-0 text-6xl sm:text-7xl ${imperialScript.className}`}>Suellen & André</h2>
+          <h3 className={`content text-white mx-6 hidden sm:flex justify-center ${rubik.className}`}>01 | 10 | 2026</h3>
         </section>
 
         <section className='bg-amber-50 py-12 px-6 sm:px-24'>
