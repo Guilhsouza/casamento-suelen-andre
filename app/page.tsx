@@ -2,6 +2,7 @@
 import { imperialScript, lato, rubik } from './fonts/index'
 import Header from './components/Header'
 import './backgroundImage.css'
+import { Countdown } from './components/Countdown'
 
 export default function Home() {
   return (
@@ -20,6 +21,11 @@ export default function Home() {
             É com imensa alegria que convidamos você para celebrar conosco o dia mais especial de nossas vidas: nosso casamento!
             Após anos de amor, companheirismo e crescimento mútuo, decidimos oficializar nossa união diante de nossos familiares e amigos.
           </p>
+        </section>
+
+        <section className='flex flex-col items-center bg-amber-200 p-5'>
+          <h2 className={`${lato.className} my-5 text-center text-3xl`}>Contagem Regressiva</h2>
+          <Countdown />
         </section>
       </main>
     </>
