@@ -10,9 +10,9 @@ export default function Home() {
       <main className="">
         <section className='bg-image h-svh bg-bottom sm:h-screen md:bg-position-[center_60%] xl:bg-position-[center_57%]'>
           <Header />
-          <h3 className={`content text-white text-center mx-6 sm:hidden ${rubik.className}`}>01 | 10 | 2026</h3>
+          <h3 className={`content text-white text-center mx-6 sm:hidden ${rubik.className}`}>06 | 06 | 2026</h3>
           <h2 className={`content text-white text-center mx-6 mt-2 sm:mt-0 text-6xl sm:text-7xl ${imperialScript.className}`}>Suelen & André</h2>
-          <h3 className={`content text-white mx-6 hidden sm:flex justify-center ${rubik.className}`}>01 | 10 | 2026</h3>
+          <h3 className={`content text-white mx-6 hidden sm:flex justify-center ${rubik.className}`}>06 | 06 | 2026</h3>
         </section>
 
         <section className='bg-amber-50 py-12 px-6 sm:px-24'>
