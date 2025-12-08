@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <main className="">
-        <section className='bg-image h-screen bg-bottom md:bg-position-[center_60%] xl:bg-position-[center_57%]'>
+        <section className='bg-image h-svh bg-bottom sm:h-screen md:bg-position-[center_60%] xl:bg-position-[center_57%]'>
           <Header />
           <h3 className={`content text-white text-center mx-6 sm:hidden ${rubik.className}`}>01 | 10 | 2026</h3>
           <h2 className={`content text-white text-center mx-6 mt-2 sm:mt-0 text-6xl sm:text-7xl ${imperialScript.className}`}>Suellen & André</h2>

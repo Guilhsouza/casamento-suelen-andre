@@ -10,7 +10,7 @@ export function Countdown() {
     });
 
     useEffect(() => {
-        const countDownDate = new Date("June 20, 2026 18:00:00").getTime();
+        const countDownDate = new Date("June 6, 2026 18:00:00").getTime();
 
         const interval = setInterval(() => {
             const now = Date.now();
