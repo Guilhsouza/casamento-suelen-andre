@@ -50,7 +50,7 @@ export default function Header() {
                 </AnimatePresence>
             </header >
 
-            <header className={`hidden text-lg justify-center mx-12 sm:flex sm:gap-x-8 flex-wrap mb-5 text-white ${lato.className}`}>
+            <header className={`hidden pt-4 text-lg justify-center mx-12 sm:flex sm:gap-x-8 flex-wrap mb-5 text-white ${lato.className}`}>
                 <div className="flex gap-x-8 flex-wrap justify-center sm:gap-y-1 z-1">
                     <a href="#">Ínicio</a>
                     <a href="##">Cerimônia</a>
