@@ -39,8 +39,8 @@ export default function Header() {
                             </button>
 
                             <nav className="flex flex-col gap-4">
-                                <a href="#">Ínicio</a>
-                                <a href="#">Cerimônia</a>
+                                <a href="#inicio">Ínicio</a>
+                                <a href="#cerimonia">Cerimônia</a>
                                 <a href="#">Recepção</a>
                                 <a href="#">Lista de Presentes</a>
                                 <a href="#">Confirme sua Presença!</a>
@@ -52,8 +52,8 @@ export default function Header() {
 
             <header className={`hidden pt-4 text-lg justify-center mx-12 sm:flex sm:gap-x-8 flex-wrap mb-5 text-white ${lato.className}`}>
                 <div className="flex gap-x-8 flex-wrap justify-center sm:gap-y-1 z-1">
-                    <a href="#">Ínicio</a>
-                    <a href="##">Cerimônia</a>
+                    <a href="#inicio">Ínicio</a>
+                    <a href="#cerimonia">Cerimônia</a>
                     <a href="#">Recepção</a>
                     <a href="#">Lista de Presentes</a>
                     <a href="#">Confirme sua Presença!</a>

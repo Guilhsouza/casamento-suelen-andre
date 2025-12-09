@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <main>
-        <section className='bg-image h-svh bg-bottom sm:h-screen md:bg-position-[center_60%] xl:bg-position-[center_57%]'>
+        <section id='inicio' className='bg-image h-svh bg-bottom sm:h-screen md:bg-position-[center_60%] xl:bg-position-[center_57%]'>
           <Header />
           <h3 className={`content text-white text-center mx-6 sm:hidden ${rubik.className}`}>06 | 06 | 2026</h3>
           <h2 className={`content text-white text-center mx-6 mt-2 sm:mt-0 text-6xl sm:text-7xl ${imperialScript.className}`}>Suelen & André</h2>
@@ -29,7 +29,7 @@ export default function Home() {
           <Countdown />
         </section>
 
-        <section>
+        <section id='cerimonia'>
           <h3 className={`text-3xl my-5 text-center ${imperialScript.className}`}>A Cerimonia</h3>
           <div className='flex justify-center'>
             <ImageCarousel />
