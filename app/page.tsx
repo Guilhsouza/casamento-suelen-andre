@@ -1,9 +1,9 @@
 'use client'
 import { imperialScript, lato, rubik } from './fonts/index'
-import Header from './components/Header'
-import './css/santaTeresinha.css'
-import './css/backgroundImage.css'
-import { Countdown } from './components/Countdown'
+import Header from './react-components/Header'
+import { Countdown } from './react-components/Countdown'
+import "./css/backgroundImage.css"
+import ImageCarousel from './react-components/Carousel'
 
 export default function Home() {
   return (
@@ -30,11 +30,12 @@ export default function Home() {
         </section>
 
         <section>
-          <h3 className={`text-3xl my-5 text-center  ${imperialScript.className}`}>A Cerimonia</h3>
-
-          <div className='ceremony-image h-96 m-5 rounded-2xl sm:h-[500px] md:h-[600px] lg:h-[700px] bg-center'></div>
+          <h3 className={`text-3xl my-5 text-center ${imperialScript.className}`}>A Cerimonia</h3>
+          <div className='flex justify-center'>
+            <ImageCarousel />
+          </div>
         </section>
-      </main>
+      </main >
     </>
   );
 }
