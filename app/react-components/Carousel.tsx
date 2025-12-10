@@ -18,25 +18,25 @@ export default function ImageCarousel() {
                 plugins={[
                     Autoplay({ delay: 4200 }),
                 ]}
-                className="m-6 w-full justify-center max-w-2xl ">
+                className="m-6 w-full justify-center max-w-2xl lg:max-w-4xl">
                 <CarouselContent>
                     <CarouselItem>
-                        <div className="relative w-full h-72 md:h-80 lg:h-96">
+                        <div className="relative w-full h-72 md:h-96 lg:h-[450px]">
                             <Image
                                 alt="Church"
                                 src={church}
                                 fill
-                                className="object-cover rounded-lg"
+                                className="object-cover rounded-lg border border-amber-300"
                             />
                         </div>
                     </CarouselItem>
                     <CarouselItem>
-                        <div className="relative w-full h-72 md:h-80 lg:h-96">
+                        <div className="relative w-full h-72 md:h-96 lg:h-[450px]">
                             <Image
                                 alt="Church"
                                 src={churchInside}
                                 fill
-                                className="object-none rounded-lg"
+                                className="object-none rounded-lg border border-amber-300"
                             />
                         </div>
                     </CarouselItem>

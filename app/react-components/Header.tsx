@@ -43,7 +43,7 @@ export default function Header() {
                                 <a href="#cerimonia">Cerimônia</a>
                                 <a href="#festa">Festa</a>
                                 <a href="#">Lista de Presentes</a>
-                                <a href="#">Confirme sua Presença!</a>
+                                <a href="#confirme-presenca">Confirme sua Presença!</a>
                             </nav>
                         </motion.aside>
                     )}
@@ -54,9 +54,9 @@ export default function Header() {
                 <div className="flex gap-x-8 flex-wrap justify-center sm:gap-y-1 z-1">
                     <a href="#inicio">Ínicio</a>
                     <a href="#cerimonia">Cerimônia</a>
-                    <a href="#">Festa</a>
+                    <a href="#festa">Festa</a>
                     <a href="#">Lista de Presentes</a>
-                    <a href="#">Confirme sua Presença!</a>
+                    <a href="#confirme-presenca">Confirme sua Presença!</a>
                 </div>
             </header>
         </>
