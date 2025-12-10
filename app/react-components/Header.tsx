@@ -41,7 +41,7 @@ export default function Header() {
                             <nav className={`flex flex-col gap-4 ${lato.className}`}>
                                 <a href="#inicio">Ínicio</a>
                                 <a href="#cerimonia">Cerimônia</a>
-                                <a href="#">Festa</a>
+                                <a href="#festa">Festa</a>
                                 <a href="#">Lista de Presentes</a>
                                 <a href="#">Confirme sua Presença!</a>
                             </nav>
