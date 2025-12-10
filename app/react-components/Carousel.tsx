@@ -16,7 +16,7 @@ export default function ImageCarousel() {
         <>
             <Carousel
                 plugins={[
-                    Autoplay({ delay: 4500 }),
+                    Autoplay({ delay: 4200 }),
                 ]}
                 className="m-6 w-full justify-center max-w-2xl ">
                 <CarouselContent>

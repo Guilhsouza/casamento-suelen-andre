@@ -12,7 +12,7 @@ export default function Header() {
         <>
 
             <header className="flex sm:hidden">
-                <button onClick={() => setOpen(true)} className='ml-4 mt-4 bg-amber-200 p-2 rounded-lg z-2'>
+                <button onClick={() => setOpen(true)} className='ml-4 mt-4 bg-amber-200 p-2 rounded-lg fixed z-2'>
                     <Image
                         src={threeLineIcon}
                         height={24}

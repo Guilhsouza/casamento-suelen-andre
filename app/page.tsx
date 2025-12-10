@@ -11,14 +11,14 @@ export default function Home() {
       <main>
         <section id='inicio' className='bg-image h-svh bg-bottom sm:h-screen md:bg-position-[center_60%] xl:bg-position-[center_57%]'>
           <Header />
-          <h3 className={`content text-white text-center mx-6 sm:hidden ${rubik.className}`}>06 | 06 | 2026</h3>
+          <h3 className={`content text-white text-center pt-10 mx-6 sm:hidden ${rubik.className}`}>06 | 06 | 2026</h3>
           <h2 className={`content text-white text-center mx-6 mt-2 sm:mt-0 text-6xl sm:text-7xl ${imperialScript.className}`}>Suelen & André</h2>
           <h3 className={`content text-white mx-6 hidden sm:flex justify-center ${rubik.className}`}>06 | 06 | 2026</h3>
         </section>
 
         <section className='bg-amber-50 py-12 px-6 sm:px-24'>
           <h3 className={`text-3xl mb-6 text-center ${imperialScript.className}`}>Nosso Grande Dia</h3>
-          <p className={`text-lg text-center ${lato.className}`}>
+          <p className={`text-lg text-justify ${lato.className}`}>
             É com imensa alegria que convidamos você para celebrar conosco o dia mais especial de nossas vidas: nosso casamento!
             Após anos de amor, companheirismo e crescimento mútuo, decidimos oficializar nossa união diante de nossos familiares e amigos.
           </p>
@@ -30,9 +30,15 @@ export default function Home() {
         </section>
 
         <section id='cerimonia'>
-          <h3 className={`text-3xl my-5 text-center ${imperialScript.className}`}>A Cerimonia</h3>
-          <div className='flex justify-center'>
-            <ImageCarousel />
+          <h3 className={`text-3xl my-6 text-center ${imperialScript.className}`}>A Cerimonia</h3>
+          <p className={`text-lg text-justify mx-5 ${lato.className}`}>Será uma alegria enorme celebrar este momento tão especial ao lado de vocês.
+            Nossa união será abençoada diante de Deus no dia <strong>06 de junho de 2026</strong>, às <strong>18h</strong>, na <strong>Praça Santa Teresinha</strong>,
+            no centro de Taubaté (SP). <br /> Esperamos a presença de vocês para compartilharmos esse dia tão importante!</p>
+          <div className=''>
+            <h3 className={`text-3xl mt-6 text-center ${imperialScript.className}`}>Local da Cerimonia</h3>
+            <div className='flex justify-center'>
+              <ImageCarousel />
+            </div>
           </div>
         </section>
       </main >
