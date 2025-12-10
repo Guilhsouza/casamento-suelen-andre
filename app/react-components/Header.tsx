@@ -38,10 +38,10 @@ export default function Header() {
                                 />
                             </button>
 
-                            <nav className="flex flex-col gap-4">
+                            <nav className={`flex flex-col gap-4 ${lato.className}`}>
                                 <a href="#inicio">Ínicio</a>
                                 <a href="#cerimonia">Cerimônia</a>
-                                <a href="#">Recepção</a>
+                                <a href="#">Festa</a>
                                 <a href="#">Lista de Presentes</a>
                                 <a href="#">Confirme sua Presença!</a>
                             </nav>
@@ -54,7 +54,7 @@ export default function Header() {
                 <div className="flex gap-x-8 flex-wrap justify-center sm:gap-y-1 z-1">
                     <a href="#inicio">Ínicio</a>
                     <a href="#cerimonia">Cerimônia</a>
-                    <a href="#">Recepção</a>
+                    <a href="#">Festa</a>
                     <a href="#">Lista de Presentes</a>
                     <a href="#">Confirme sua Presença!</a>
                 </div>
