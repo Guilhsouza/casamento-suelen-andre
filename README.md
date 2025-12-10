@@ -1,4 +1,4 @@
-# 🎁 Presente de Casamento – Suelen
+# 💍 Casamento Suelen e André
 
 Este projeto foi criado como um presente de casamento para minha amiga **Suelen**.  
 A proposta foi desenvolver uma experiência digital personalizada, elegante e emocionante, celebrando esse momento tão especial.
@@ -25,6 +25,7 @@ Este projeto foi construído utilizando as seguintes ferramentas e tecnologias:
 ## 💛 Objetivo
 
 Além de ser um presente especial, este projeto também foi uma oportunidade para praticar e combinar diversos recursos atuais do ecossistema React/Next.js, explorando animações, responsividade e uma estética refinada.
+
 
 
 
