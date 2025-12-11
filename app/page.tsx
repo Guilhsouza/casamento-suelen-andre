@@ -3,7 +3,9 @@ import { imperialScript, lato, rubik } from './fonts/index'
 import Header from './react-components/Header'
 import { Countdown } from './react-components/Countdown'
 import "./css/backgroundImage.css"
-import ImageCarousel from './react-components/Carousel'
+import Form from './react-components/Form'
+import Cerimonia from './react-components/Cerimonia'
+import Festa from './react-components/Festa'
 
 export default function Home() {
   return (
@@ -29,36 +31,15 @@ export default function Home() {
         </section>
 
         <section id='cerimonia'>
-          <h3 className={`text-4xl lg:text-5xl mt-12 mb-6 text-center text-gray-900 ${imperialScript.className}`}>A Cerimonia</h3>
-          <p className={`text-md lg:text-lg text-justify mx-5 text-gray-700 sm:px-14 ${lato.className}`}>Será uma alegria enorme celebrar este momento tão especial ao lado de vocês.
-            Nossa união será abençoada diante de Deus no dia <strong>06 de junho de 2026</strong>, às <strong>18h</strong>, na <strong>Praça Santa Teresinha</strong>,
-            no centro de Taubaté (SP). <br /> Esperamos a presença de vocês para compartilharmos esse dia tão importante!</p>
-
-          <div>
-            <h3 className={`text-4xl lg:text-5xl mt-6 text-center text-gray-900 ${imperialScript.className}`}>Local da Cerimonia</h3>
-            <div className='flex justify-center'>
-              <ImageCarousel />
-            </div>
-
-            <div className='flex justify-center m-6'>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.7805823815893!2d-45.56418122581033!3d-23.031827242349618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ccf91c91edf627%3A0x85a9e3e200b69b6!2sPra%C3%A7a%20Santa%20Terezinha%20-%20Centro%2C%20Taubat%C3%A9%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1765386321065!5m2!1spt-BR!2sbr"
-                loading="lazy"
-                className='w-full rounded-xl max-w-2xl lg:max-w-4xl border h-[180px] lg:h-[300px] border-amber-200'>
-              </iframe>
-            </div>
-          </div>
+          <Cerimonia />
         </section>
 
         <section id='festa' className='mt-12'>
-          <h3 className={`text-4xl lg:text-5xl mb-6 text-center text-gray-900 ${imperialScript.className}`}>A Festa</h3>
+          <Festa />
         </section>
 
         <section id='confirme-presenca'>
-          <h3 className={`text-4xl lg:text-5xl mb-6 text-center text-gray-900 ${imperialScript.className}`}>Confirme Sua Presença!</h3>
-          <form action="">
-
-          </form>
+          <Form />
         </section>
       </main >
     </>
