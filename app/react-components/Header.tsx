@@ -17,6 +17,12 @@ export default function Header({ imgRef }: { imgRef: React.RefObject<HTMLElement
             },
             { threshold: 0 }
         )
+
+        if (imgRef.current) {
+            observer.observe(imgRef.current);
+        }
+
+        return () => observer.disconnect();
     });
 
     return (
@@ -60,15 +66,30 @@ export default function Header({ imgRef }: { imgRef: React.RefObject<HTMLElement
                 </AnimatePresence>
             </header >
 
-            <header className={`hidden pt-4 text-lg justify-center mx-12 sm:flex sm:gap-x-8 flex-wrap mb-5 text-white ${lato.className}`}>
-                <div className="flex gap-x-8 flex-wrap justify-center sm:gap-y-1 z-1">
+            <motion.header
+                variants={
+                    {
+                        hidden: { y: 0 },
+                        visible: { y: 0, opacity: 1 },
+                    }
+                }
+                animate={scrolled ? "visible" : "hidden"}
+                transition={{ duration: .3, ease: "easeOut" }}
+                className={
+                    `hidden pt-4 text-lg justify-center sm:flex sm:gap-x-8 flex-wrap mb-5 text-white ${lato.className} 
+                ${scrolled ? `bg-white bg-opacity-90 shadow-lg fixed w-full p-4 z-10` : ''}`}
+
+            >
+                <div className={`flex gap-x-8 flex-wrap justify-center sm:gap-y-1 z-1
+                    ${scrolled ? 'text-gray-900' : 'text-white'}`}>
                     <a href="#inicio">Ínicio</a>
                     <a href="#cerimonia">Cerimônia</a>
                     <a href="#festa">Festa</a>
                     <a href="#">Lista de Presentes</a>
                     <a href="#confirme-presenca">Confirme sua Presença!</a>
                 </div>
-            </header>
+            </motion.header >
+
 
         </>
 
