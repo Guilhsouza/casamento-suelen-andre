@@ -4,13 +4,19 @@ import Header from './react-components/Header'
 import { Countdown } from './react-components/Countdown'
 import "./css/backgroundImage.css"
 import ImageCarousel from './react-components/Carousel'
+import { useRef } from 'react'
 
 export default function Home() {
+  const imgRef = useRef(null);
+
   return (
     <>
       <main>
-        <section id='inicio' className='bg-image h-svh bg-bottom sm:h-screen md:bg-position-[center_60%] xl:bg-position-[center_57%]'>
-          <Header />
+        <section
+          id='inicio'
+          ref={imgRef}
+          className='bg-image h-svh bg-bottom sm:h-screen md:bg-position-[center_60%] xl:bg-position-[center_57%]'>
+          <Header imgRef={imgRef} />
           <h3 className={`content text-white text-center pt-10 mx-6 sm:hidden ${rubik.className}`}>06 | 06 | 2026</h3>
           <h2 className={`content text-white text-center mx-6 mt-2 sm:mt-0 text-6xl sm:text-7xl ${imperialScript.className}`}>Suelen & André</h2>
           <h3 className={`content text-white mx-6 hidden sm:flex justify-center ${rubik.className}`}>06 | 06 | 2026</h3>

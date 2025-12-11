@@ -1,16 +1,26 @@
 import Image from 'next/image'
 import threeLineIcon from '../icons/threeLineMenu.svg'
 import leftArrow from '../icons/leftArrow.svg'
-import { useState } from "react";
+import { useState, useEffect, JSX } from "react";
 import { lato } from "../fonts/index"
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function Header() {
+export default function Header({ imgRef }: { imgRef: React.RefObject<HTMLElement | null> }): JSX.Element {
     const [open, setOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setScrolled(!entry.isIntersecting);
+            },
+            { threshold: 0 }
+        )
+    });
 
     return (
         <>
-
             <header className="flex sm:hidden">
                 <button onClick={() => setOpen(true)} className='ml-4 mt-4 bg-amber-200 p-2 rounded-lg fixed z-2'>
                     <Image
@@ -59,6 +69,7 @@ export default function Header() {
                     <a href="#confirme-presenca">Confirme sua Presença!</a>
                 </div>
             </header>
+
         </>
 
 
