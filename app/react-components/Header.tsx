@@ -69,11 +69,12 @@ export default function Header({ imgRef }: { imgRef: React.RefObject<HTMLElement
             <motion.header
                 variants={
                     {
-                        hidden: { y: 0 },
-                        visible: { y: 0, opacity: 1 },
+                        fixed: { y: 0 },
+                        scroll: { y: 10 },
                     }
                 }
-                animate={scrolled ? "visible" : "hidden"}
+                initial={false}
+                animate={scrolled ? "fixed" : "scroll"}
                 transition={{ duration: .3, ease: "easeOut" }}
                 className={
                     `hidden pt-4 text-lg justify-center sm:flex sm:gap-x-8 flex-wrap mb-5 text-white ${lato.className} 
