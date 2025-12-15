@@ -20,7 +20,7 @@ export default function Form() {
     };
 
     return (
-        <>
+        <div className='bg-amber-50'>
             <h3
                 className={`text-4xl lg:text-5xl mb-6 text-center text-gray-900 ${imperialScript.className}`}
             >
@@ -96,10 +96,10 @@ export default function Form() {
                     className="px-6 py-2 bg-amber-300 rounded-lg mt-4 "
                 >
                     <input type="hidden" name='apiKey' value={process.env.NEXT_PUBLIC_STATICFORM_API_KEY} />
-                    <input type="hidden" name='redirectTo' value={'https://casamento-suelen-andre.vercel.app/thanks'} />
+                    <input type="hidden" name='redirectTo' value={'https://localhost:3000/thanks'} />
                     Enviar
                 </button>
             </form >
-        </>
+        </div>
     );
 }

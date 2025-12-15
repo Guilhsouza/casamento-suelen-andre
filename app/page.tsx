@@ -14,7 +14,7 @@ export default function Home() {
   const imgRef = useRef(null);
 
   return (
-    <>
+    <div className='bg-amber-50'>
       <main>
         <section
           id='inicio'
@@ -38,19 +38,19 @@ export default function Home() {
           <Countdown />
         </section>
 
-        <section id='cerimonia'>
+        <section id='cerimonia' className='bg-amber-50'>
           <Cerimonia />
         </section>
 
-        <section id='festa' className='mt-12'>
+        <section id='festa' className='bg-amber-50 mt-12'>
           <Festa />
         </section>
 
-        <section id='confirme-presenca'>
+        <section id='confirme-presenca' className='bg-amber-50'>
           <Form />
         </section>
       </main >
-    </>
+    </div>
   );
 }
 

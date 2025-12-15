@@ -3,8 +3,9 @@ import ImageCarousel from '../react-components/Carousel'
 
 export default function Cerimonia() {
     return (
-        <>
-            <h3 className={`text-4xl lg:text-5xl mt-12 mb-6 text-center text-gray-900 ${imperialScript.className}`}>A Cerimonia</h3>
+        < div className='bg-amber-50'>
+            < h3 className={`text-4xl lg:text-5xl mt-12 mb-6 text-center text-gray-900 ${imperialScript.className}`
+            }> A Cerimonia</h3 >
             <p className={`text-md lg:text-lg text-justify mx-5 text-gray-700 sm:px-14 ${lato.className}`}>Será uma alegria enorme celebrar este momento tão especial ao lado de vocês.
                 Nossa união será abençoada diante de Deus no dia <strong>06 de junho de 2026</strong>, às <strong>18h</strong>, na <strong>Praça Santa Teresinha</strong>,
                 no centro de Taubaté (SP). <br /> Esperamos a presença de vocês para compartilharmos esse dia tão importante!</p>
@@ -23,6 +24,6 @@ export default function Cerimonia() {
                     </iframe>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
