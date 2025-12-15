@@ -1,4 +1,6 @@
 'use client'
+
+import 'dotenv/config'
 import { imperialScript, lato, rubik } from './fonts/index'
 import Header from './react-components/Header'
 import { Countdown } from './react-components/Countdown'
