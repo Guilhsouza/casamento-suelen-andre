@@ -13,7 +13,7 @@ export default function Thanks() {
                 Até breve!
             </p>
             <button
-                className={`${rubik.className} text-lg bg-amber-200 shadow-lg py-2 px-10 rounded-xl border-transparent sm:text-xl sm:px-20 hover:bg-amber-700 hover:text-white transition`}
+                className={`${rubik.className} text-lg bg-amber-300 shadow-lg py-2 px-10 rounded-xl border-transparent sm:text-xl sm:px-20 hover:bg-amber-700 hover:text-white transition`}
                 onClick={() => { window.location.href = 'https://casamento-suelen-andre.vercel.app/' }
                 }>
                 Voltar para o Site!</button>
