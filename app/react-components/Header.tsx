@@ -58,7 +58,6 @@ export default function Header({ imgRef }: { imgRef: React.RefObject<HTMLElement
                                 <a href="#inicio">Ínicio</a>
                                 <a href="#cerimonia">Cerimônia</a>
                                 <a href="#festa">Festa</a>
-                                <a href="#">Lista de Presentes</a>
                                 <a href="#confirme-presenca">Confirme sua Presença!</a>
                             </nav>
                         </motion.aside>
@@ -86,7 +85,6 @@ export default function Header({ imgRef }: { imgRef: React.RefObject<HTMLElement
                     <a href="#inicio">Ínicio</a>
                     <a href="#cerimonia">Cerimônia</a>
                     <a href="#festa">Festa</a>
-                    <a href="#">Lista de Presentes</a>
                     <a href="#confirme-presenca">Confirme sua Presença!</a>
                 </div>
             </motion.header >
