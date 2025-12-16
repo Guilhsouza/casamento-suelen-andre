@@ -152,7 +152,7 @@ export default function Form() {
 
                 <input type="hidden" name='apiKey' value={process.env.NEXT_PUBLIC_STATICFORM_API_KEY} />
                 <textarea name="Mensagem" hidden readOnly value={message} />
-                <input type="hidden" name='redirectTo' value={'http://localhost:3000/thanks'} />
+                <input type="hidden" name='redirectTo' value={'https://casamento-suelen-andre.vercel.app/thanks'} />
 
                 <button
                     type="submit"
