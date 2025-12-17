@@ -17,8 +17,7 @@ export default function ImageCarousel() {
             <Carousel
                 plugins={[
                     Autoplay({
-                        delay: 3000,
-                        stopOnInteraction: false,
+                        delay: 4000,
                     }),
 
                 ]}

@@ -81,6 +81,7 @@ export default function Form() {
 
             <form
                 className={`mb-10 mx-6 flex-col justify-center flex gap-6 bg-rose-50 max-w-2xl w-full p-5 rounded-2xl border border-amber-200 ${rubik.className}`}
+                style={{ boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px' }}
                 action="https://api.staticforms.dev/submit"
                 onSubmit={handleSubmit}
                 method="POST"
@@ -156,7 +157,7 @@ export default function Form() {
 
                 <button
                     type="submit"
-                    className="px-6 py-2 max-w-2xl bg-amber-300 shadow-sm rounded-lg mt-4 text-md sm:text-lg hover:bg-amber-500 hover:shadow-lg hover:text-rose-50 transition"
+                    className="px-6 py-2 max-w-2xl bg-amber-300 shadow-md rounded-lg mt-4 text-md sm:text-lg hover:bg-amber-500 hover:shadow-lg hover:text-rose-50 transition"
                 >
                     Confirmar Presença!
                 </button>
