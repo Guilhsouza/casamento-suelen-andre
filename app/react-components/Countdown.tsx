@@ -51,19 +51,23 @@ export function Countdown() {
         <>
             <h2 className={`${lato.className} my-5 text-center text-3xl`}>Contagem Regressiva</h2>
             <div id="timer" className={`${lato.className} grid grid-cols-4 gap-2 my-5 text-amber-900 text-3xl md:text-4xl lg:text-5xl xl:text-6xl`}>
-                <div className="bg-amber-50 text-center rounded-lg p-2">
+                <div className="bg-amber-50 text-center rounded-lg p-2"
+                    style={{ boxShadow: 'rgba(0, 0, 0, 0.15) 0px 2px 8px' }}>
                     {time.days}
                     <div className="text-sm">Dias</div>
                 </div>
-                <div className="bg-amber-50 text-center rounded-lg p-2 ">
+                <div className="bg-amber-50 text-center rounded-lg p-2 "
+                    style={{ boxShadow: 'rgba(0, 0, 0, 0.15) 0px 2px 8px' }}>
                     {time.hours}
                     <div className="text-sm">Horas</div>
                 </div>
-                <div className="bg-amber-50 text-center rounded-lg p-2 ">
+                <div className="bg-amber-50 text-center rounded-lg p-2 "
+                    style={{ boxShadow: 'rgba(0, 0, 0, 0.15) 0px 2px 8px' }}>
                     {time.minutes}
                     <div className="text-sm">Minutos</div>
                 </div>
-                <div className="bg-amber-50 text-center rounded-lg p-2 ">
+                <div className="bg-amber-50 text-center rounded-lg p-2 "
+                    style={{ boxShadow: 'rgba(0, 0, 0, 0.15) 0px 2px 8px' }}>
                     {time.seconds}
                     <div className="text-sm">Segundos</div>
                 </div>

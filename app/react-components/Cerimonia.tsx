@@ -16,14 +16,15 @@ export default function Cerimonia() {
                     <ImageCarousel />
                 </div>
 
-                <div className='flex justify-center m-6'>
+                <div className='flex justify-center m-6'
+                >
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.7805823815893!2d-45.56418122581033!3d-23.031827242349618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ccf91c91edf627%3A0x85a9e3e200b69b6!2sPra%C3%A7a%20Santa%20Terezinha%20-%20Centro%2C%20Taubat%C3%A9%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1765386321065!5m2!1spt-BR!2sbr"
                         loading="lazy"
-                        className='w-full rounded-xl max-w-2xl lg:max-w-4xl border h-[180px] lg:h-[300px] border-amber-200'>
+                        className='w-full rounded-xl max-w-2xl lg:max-w-4xl shadow-md border h-[180px] lg:h-[300px] border-amber-200'>
                     </iframe>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }

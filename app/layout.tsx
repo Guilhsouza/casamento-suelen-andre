@@ -4,6 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Suelen & André",
   description: "",
+  metadataBase: new URL('https://casamento-suelen-andre.vercel.app/'),
   openGraph: {
     images: [
       {
