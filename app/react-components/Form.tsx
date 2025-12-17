@@ -88,21 +88,21 @@ export default function Form() {
 
                 <div className='w-full max-w-2xl flex flex-col items-start'>
                     <label htmlFor="nome">Nome</label>
-                    <input type="text" id="nome" className="px-2 py-1 border rounded-sm block w-full" required
+                    <input type="text" id="nome" className="px-2 py-1 border border-gray-700 rounded-sm block w-full" required
                         placeholder='Insira seu nome'
                         onChange={e => { setName(e.target.value) }} />
                 </div>
 
                 <div className='w-full max-w-2xl flex flex-col items-start'>
                     <label htmlFor="email">Email</label>
-                    <input type="text" id="email" className="px-2 py-1 border rounded-sm block w-full" required
+                    <input type="text" id="email" className="px-2 py-1 border border-gray-700 rounded-sm block w-full" required
                         placeholder='exemplo@exemplo.com'
                         onChange={e => { setEmail(e.target.value) }} />
                 </div>
 
                 <div className='w-full max-w-2xl flex flex-col items-start'>
                     <label htmlFor="numero_de_telefone">Número de telefone</label>
-                    <input type="text" id="numero_de_telefone" className="px-2 py-1 border rounded-sm block w-full" required
+                    <input type="text" id="numero_de_telefone" className="px-2 py-1 border border-gray-700 rounded-sm block w-full" required
                         placeholder='(12) 99999-9999'
                         onChange={e => { setPhone(e.target.value) }} />
                 </div>
@@ -111,7 +111,7 @@ export default function Form() {
                     <label htmlFor="quantidade_acompanhantes">Quantidade de acompanhantes</label>
                     <select
                         id="quantidade_acompanhantes"
-                        className="border block rounded-md"
+                        className="border border-gray-700 block rounded-md"
                         value={followers}
                         onChange={(e) => handleFollowersChange(Number(e.target.value))}
                     >
