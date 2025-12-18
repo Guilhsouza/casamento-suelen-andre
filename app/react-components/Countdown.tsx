@@ -12,7 +12,7 @@ export function Countdown() {
     const [isOver, setIsOver] = useState(false);
 
     useEffect(() => {
-        const countDownDate = new Date("June 6, 2026 18:00:00").getTime();
+        const countDownDate = new Date("June 6, 2026 20:00:00").getTime();
 
         const interval = setInterval(() => {
             const now = Date.now();
