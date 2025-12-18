@@ -37,7 +37,7 @@ export function Countdown() {
 
     if (isOver) {
         return (
-            <div className={`${lato.className} text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-amber-900`}>
+            <div className={`${lato.className} text-3xl md:text-4xl lg:text-5xl text-amber-900`}>
                 <p>O grande dia chegou!</p>
                 <div className="flex justify-center w-full">
                     🎉💍🎉
