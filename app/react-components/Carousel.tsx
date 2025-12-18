@@ -7,11 +7,9 @@ import {
 } from "../../components/ui/carousel";
 
 import Autoplay from "embla-carousel-autoplay"
-import churchInside from '../images/santa-teresinha-inside.jpg'
-import church from '../images/santa-teresinha.jpg'
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-export default function ImageCarousel() {
+export default function ImageCarousel({ image1, image2 }: { image1: string | StaticImageData, image2: string | StaticImageData }) {
     return (
         <>
             <Carousel
@@ -27,7 +25,7 @@ export default function ImageCarousel() {
                         <div className="relative w-full h-72 md:h-96 lg:h-[450px]">
                             <Image
                                 alt="Church"
-                                src={church}
+                                src={image1}
                                 fill
                                 className="object-cover rounded-lg border border-amber-300"
                             />
@@ -37,7 +35,7 @@ export default function ImageCarousel() {
                         <div className="relative w-full h-72 md:h-96 lg:h-[450px]">
                             <Image
                                 alt="Church"
-                                src={churchInside}
+                                src={image2}
                                 fill
                                 className="object-none rounded-lg border border-amber-300"
                             />
