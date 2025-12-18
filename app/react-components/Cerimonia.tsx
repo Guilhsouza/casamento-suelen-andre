@@ -6,7 +6,7 @@ import church from '../images/santa-teresinha.jpg'
 export default function Cerimonia() {
     return (
         < div className='bg-amber-50'>
-            < h3 className={`text-4xl lg:text-5xl mt-12 mb-6 text-center text-gray-900 ${imperialScript.className}`
+            < h3 className={`text-4xl lg:text-5xl my-6 text-center text-gray-900 ${imperialScript.className}`
             }>A Cerimônia</h3 >
             <p className={`text-md lg:text-lg text-justify mx-5 text-gray-700 sm:px-14 ${lato.className}`}>
                 Nossa união será abençoada diante de Deus no dia <strong>06 de junho de 2026</strong>, às <strong>19:30h</strong>, na <strong>Praça Santa Teresinha</strong>,
