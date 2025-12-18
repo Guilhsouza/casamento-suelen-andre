@@ -1,19 +1,21 @@
 import { imperialScript, lato } from '../fonts/index'
 import ImageCarousel from '../react-components/Carousel'
+import churchInside from '../images/santa-teresinha-inside.jpg'
+import church from '../images/santa-teresinha.jpg'
 
 export default function Cerimonia() {
     return (
         < div className='bg-amber-50'>
             < h3 className={`text-4xl lg:text-5xl mt-12 mb-6 text-center text-gray-900 ${imperialScript.className}`
-            }>A Cerimonia</h3 >
+            }>A Cerimônia</h3 >
             <p className={`text-md lg:text-lg text-justify mx-5 text-gray-700 sm:px-14 ${lato.className}`}>
                 Nossa união será abençoada diante de Deus no dia <strong>06 de junho de 2026</strong>, às <strong>18h</strong>, na <strong>Praça Santa Teresinha</strong>,
-                no centro de Taubaté (SP). <br /> Esperamos a presença de vocês para compartilharmos esse dia tão importante!</p>
+                no centro de Taubaté (SP). <br /> Esperamos a presença de vocês para podermos compartilhar esse dia tão importante!</p>
 
             <div>
-                <h3 className={`text-4xl lg:text-5xl mt-6 text-center text-gray-900 ${imperialScript.className}`}>Local da Cerimonia</h3>
+                <h3 className={`text-4xl lg:text-5xl mt-6 text-center text-gray-900 ${imperialScript.className}`}>Local da Cerimônia</h3>
                 <div className='flex justify-center'>
-                    <ImageCarousel />
+                    <ImageCarousel image1={church} image2={churchInside} />
                 </div>
 
                 <div className='flex justify-center m-6'
