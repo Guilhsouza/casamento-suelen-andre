@@ -39,6 +39,8 @@ export default function Home() {
           <Countdown />
         </section>
 
+        <BreakSect />
+
         <section id='cerimonia' className='bg-amber-50'>
           <Cerimonia />
         </section>
