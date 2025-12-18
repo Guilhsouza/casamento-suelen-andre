@@ -2,7 +2,7 @@
 
 import 'dotenv/config'
 import { useState } from "react";
-import { imperialScript, lato, rubik } from "../fonts/index";
+import { imperialScript, rubik } from "../fonts/index";
 
 export default function Form() {
     const [followers, setFollowers] = useState(0);
