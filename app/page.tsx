@@ -9,6 +9,7 @@ import { useRef } from 'react'
 import Form from './react-components/Form'
 import Cerimonia from './react-components/Cerimonia'
 import Festa from './react-components/Festa'
+import BreakSect from './react-components/BreakSect'
 
 export default function Home() {
   const imgRef = useRef(null);
@@ -42,9 +43,13 @@ export default function Home() {
           <Cerimonia />
         </section>
 
-        <section id='festa' className='bg-amber-50 mt-12'>
+        <BreakSect />
+
+        <section id='festa' className='bg-amber-50'>
           <Festa />
         </section>
+
+        <BreakSect />
 
         <section id='confirme-presenca' className='bg-amber-50'>
           <Form />
