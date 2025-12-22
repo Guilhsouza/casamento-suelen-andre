@@ -37,7 +37,7 @@ export default function ImageCarousel({ image1, image2 }: { image1: string | Sta
                                 alt="Church"
                                 src={image2}
                                 fill
-                                className="object-none rounded-lg border border-amber-300"
+                                className="object-cover rounded-lg border border-amber-300"
                             />
                         </div>
                     </CarouselItem>
