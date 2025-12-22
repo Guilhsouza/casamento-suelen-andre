@@ -1,6 +1,6 @@
 import { imperialScript, lato } from "../fonts/index";
-import churchInside from '../images/santa-teresinha-inside.jpg'
-import church from '../images/santa-teresinha.jpg'
+import party from '../images/party.jpg'
+import partyInside from '../images/party-inside.jpeg'
 import ImageCarousel from "./Carousel";
 
 export default function Festa() {
@@ -14,7 +14,7 @@ export default function Festa() {
             <div>
                 <h3 className={`text-4xl lg:text-5xl mt-6 text-center text-gray-900 ${imperialScript.className}`}>Local da Festa</h3>
                 <div className='flex justify-center'>
-                    <ImageCarousel image1={church} image2={churchInside} />
+                    <ImageCarousel image1={party} image2={partyInside} />
                 </div>
 
                 <div className='flex justify-center m-6'
