@@ -1,4 +1,4 @@
-import { imperialScript } from "../fonts";
+import { imperialScript, lato, rubik } from "../fonts";
 import CardPresentes from "./CardPresentes";
 import church from "../images/santa-teresinha.jpg"
 
@@ -8,22 +8,11 @@ export default function Presentes() {
             < h3 className={`text-4xl lg:text-5xl mb-6 text-center text-gray-900 ${imperialScript.className}`
             }>Lista de Presentes</h3>
 
+            <p className={`text-gray-600 text-center mb-6 text-xs mx-6 ${lato.className}`}>
+                ❤️ Cada presente desta lista representa um pedacinho do nosso novo começo, recebido com carinho via Pix ❤️
+            </p>
+
             <div className="grid grid-cols-2 gap-2 lg:gap-5 sm:grid-cols-3 mx-6">
-                <CardPresentes
-                    img={church}
-                    name="presente"
-                    value="300,00"
-                />
-                <CardPresentes
-                    img={church}
-                    name="presente"
-                    value="300,00"
-                />
-                <CardPresentes
-                    img={church}
-                    name="presente"
-                    value="300,00"
-                />
                 <CardPresentes
                     img={church}
                     name="presente"
