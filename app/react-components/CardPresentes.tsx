@@ -1,6 +1,9 @@
+'use client'
+
 import Image, { StaticImageData } from "next/image"
 import { rubik } from "../fonts"
 import { toast } from "sonner"
+import { Button } from "@/components/ui/button"
 
 export default function CardPresentes({ img, name, value }: { img: string | StaticImageData, name: string, value: string }) {
 
@@ -21,10 +24,16 @@ export default function CardPresentes({ img, name, value }: { img: string | Stat
                     <button className="text-sm py-1 px-4 mt-3 rounded-md border text-grey-700 bg-[#E9C46A] hover:text-white hover:bg-[#C6A75A] border-gray-500 transition"
                         onClick={() => {
                             {
-                                navigator.clipboard.writeText('casamento.suelen.andre@gmail.com')
-                                toast('Pix copiado para a área de transferência!', {
+                                toast.success('Pix copiado!', {
+                                    description: 'Agradecemos seu presente!! 💙',
+                                    style: { background: '#FEF3C7' },
+                                    action: {
+                                        label: 'Fechar',
+                                        onClick: () => console.log('fechado'),
 
+                                    }
                                 })
+                                navigator.clipboard.writeText('casamento.suelen.andre@gmail.com')
                             }
                         }}
                     >
