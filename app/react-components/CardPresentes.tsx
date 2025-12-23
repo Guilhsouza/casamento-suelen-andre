@@ -16,7 +16,8 @@ export default function CardPresentes({ img, name, value }: { img: string | Stat
                     />
                 </div>
                 <div className={`${rubik.className} mt-1 mb-2`}>
-                    <h4 className={'text-gray-700 text-xs mb-2 lg:text-md'}>{name}</h4>
+                    <h4 className={'text-gray-700 text-xs mb-2 lg:text-md h-7 overflow-hidden flex justify-center items-center'}>
+                        {name}</h4>
                     <p>R$ {value}</p>
                     <button className="text-sm py-1 px-4 mt-3 rounded-md border text-grey-700 bg-[#E9C46A] hover:text-white hover:bg-[#C6A75A] border-gray-500 transition"
                         onClick={() => {
