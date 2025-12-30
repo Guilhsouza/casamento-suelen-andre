@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import 'dotenv/config'
 import { useState } from "react";
