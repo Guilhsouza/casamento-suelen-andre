@@ -9,7 +9,7 @@ export default function CardPresentes({ img, name, value }: { img: string | Stat
     return (
         <>
             <div className="flex flex-col p-2 text-center max-w-3xs md:max-w-md border border-amber-200 bg-amber-100 rounded-xl">
-                <div className="flex justify-center h-[105px] md:h-[140px] lg:h-48 w-full">
+                <div className="flex justify-center h-[105px] md:h-[140px] lg:h-[200px] w-full">
                     <Image
                         src={img}
                         alt={name}
