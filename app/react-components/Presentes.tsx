@@ -1,6 +1,6 @@
 import { imperialScript, lato, rubik } from "../fonts";
 import CardPresentes from "./CardPresentes";
-import church from "../images/santa-teresinha.jpg"
+import { cafeteira, aspirador, jogoCama, jantar } from "../images/index.js"
 
 export default function Presentes() {
     return (
@@ -12,13 +12,42 @@ export default function Presentes() {
                 ❤️ Cada presente desta lista representa um pedacinho do nosso novo começo, recebido com carinho via Pix ❤️
             </p>
 
-            <div className="grid grid-cols-2 gap-2 lg:gap-5 sm:grid-cols-3 mx-6">
+            <div className="grid grid-cols-2 gap-2 lg:gap-5 sm:grid-cols-3 lg:grid-cols-4 mx-6">
                 <CardPresentes
-                    img={church}
-                    name="presente"
-                    value="300,00"
+                    img={aspirador}
+                    name="Passagens para lua de Mel na praia🏖️"
+                    value="799,00"
                 />
+                <CardPresentes
+                    img={aspirador}
+                    name="Diaria Do Hotel🏨"
+                    value="230,00"
+                />
+                <CardPresentes
+                    img={cafeteira}
+                    name="Cafeteira Dolce Gusto☕"
+                    value="399,00"
+                />
+                <CardPresentes
+                    img={aspirador}
+                    name="Robô Aspirador🤖"
+                    value="499,00"
+                />
+                <CardPresentes
+                    img={jogoCama}
+                    name="Jogo de Cama🛏️"
+                    value="99,00"
+                />
+                <CardPresentes
+                    img={jantar}
+                    name="Aparelhos de Jantar Cerâmica🍽️"
+                    value="139,00"
+                />
+
             </div>
+
+            <p className={`mt-6 text-gray-600 text-center mb-6 text-xs mx-6 ${lato.className}`}>
+                Chave Pix: casamento.suelen.andre@gmail.com</p>
         </div>
     )
 }
