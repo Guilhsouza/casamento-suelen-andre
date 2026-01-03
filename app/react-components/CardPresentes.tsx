@@ -27,7 +27,7 @@ export default function CardPresentes({ img, name, value }: { img: string | Stat
                             {
 
                                 const data = {
-                                    key: "gui.edu0380@gmail.com",
+                                    key: "casamento.suelen.andre@gmail.com",
                                     description: "Presente para o casamento",
                                     amount: parseFloat(value),
                                     name: "SUELEN E ANDRE",
