@@ -9,7 +9,7 @@ export default function Festa() {
             <h3 className={`text-4xl lg:text-5xl mb-6 text-center text-gray-900 ${imperialScript.className}`}>A Festa</h3>
             <p className={`text-md lg:text-lg text-justify mx-5 text-gray-700 sm:px-14 ${lato.className}`}>
                 Após a cerimônia, todos estão convidados a celebrar conosco na <strong>Espaço Momenti</strong>,
-                localizada na Av. Engenheiro Carlos Reinaldo Mendes, 1540 - Jardim das Nações, Taubaté (SP).
+                localizada na Estrada Antônio de Angelis, 1157 - Chácaras Catagua, Taubaté (SP).
             </p>
             <div>
                 <h3 className={`text-4xl lg:text-5xl mt-6 text-center text-gray-900 ${imperialScript.className}`}>Local da Festa</h3>
